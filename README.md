@@ -1,3 +1,8 @@
+## Project Poster
+
+![SnapiGo Project Poster](assets/Computing%20Poster-Pushpa_page-0001.jpg)
+
+
 # SnapiGo
 
 SnapiGo is a mobile application that helps users scan, store, and use paper coupons before they expire. The app uses OCR to extract coupon details and sends location-based reminders when users are near relevant stores.
@@ -32,11 +37,6 @@ Many paper coupons go unused because people forget them or do not have time to s
 3. OCR extracts key coupon information
 4. Data is stored securely
 5. Notifications are triggered when the user is near a relevant store
-
-
-## Project Poster
-
-![SnapiGo Project Poster](assets/Computing%20Poster-Pushpa_page-0001.jpg)
 
 
 ## Future Improvements
