@@ -1,115 +1,49 @@
-# Snapigo
+# SnapiGo
 
-Snapigo is a location-aware coupon management application that helps users make better use of their saved offers. It allows users to scan or upload coupons, extract relevant details, and receive notifications when they are near stores where those coupons can be used.
+SnapiGo is a mobile application that helps users scan, store, and use paper coupons before they expire. The app uses OCR to extract coupon details and sends location-based reminders when users are near relevant stores.
 
 ## Overview
 
-Users often collect coupons but forget to use them or miss opportunities when they are physically near a store. Snapigo addresses this by combining OCR-based data extraction with real-time geolocation to provide timely and context-aware reminders.
+Many paper coupons go unused because people forget them or do not have time to search through coupon books. SnapiGo solves this problem by converting paper coupons into a simple and accessible digital system.
 
-The application focuses on bridging the gap between digital coupon storage and real-world usage.
+## Key Features
 
-## Features
-
-- Scan or upload coupon images
-- Extract details such as store name, discount, and expiration date
-- Store and organize coupons in a structured format
-- Monitor user location and match it with nearby stores
-- Trigger notifications based on proximity
-- Track expiration dates and send reminders
+- Scan coupons using OCR
+- Automatically extract and store coupon details
+- Receive location-based reminders
+- Edit and manage saved coupons
+- Explore publicly shared coupons
+- Centralized coupon management in one app
 
 ## Tech Stack
 
-Frontend:
-- React Native (Expo with Dev Client)
-- Expo APIs (Camera, Location, Notifications)
-- Axios
+- React Native (Expo)
+- Supabase
+- Apple Vision OCR
+- Expo Camera
+- Expo Location
+- Expo Task Manager
+- Expo Notifications
 
-Backend:
-- Node.js
-- Express.js
+## How It Works
 
-Database:
-- Supabase (PostgreSQL)
-
-Core Integrations:
-- OCR (Tesseract or Google Vision API)
-- Geolocation services
-- Push notifications
-
-## System Flow
-
-1. The user scans or uploads a coupon using the mobile app.
-2. OCR extracts structured information from the image.
-3. The backend processes and stores the coupon data in Supabase.
-4. The app tracks user location (with permission).
-5. When the user is near a relevant store, a notification is triggered.
-
-## Project Structure
+1. User signs up and logs in
+2. Scans a coupon using the camera
+3. OCR extracts key coupon information
+4. Data is stored securely
+5. Notifications are triggered when the user is near a relevant store
 
 
-snapigo/
-├── mobile/ # React Native (Expo) app
-├── server/ # Backend (Node.js / Express)
-├── services/ # OCR and location logic
-├── models/ # Data handling / schemas
-├── routes/ # API endpoints
-└── README.md
+## Project Poster
 
-
-## Installation
-
-Clone the repository:
-
-
-git clone https://github.com/your-username/snapigo.git
-
-cd snapigo
-
-
-Install dependencies:
-
-Mobile app:
-
-cd mobile
-npm install --legacy-peer-deps
-
-
-Backend:
-
-cd ../server
-npm install --legacy-peer-deps
-
-
-## Environment Variables
-
-Create a `.env` file in the server directory:
-
-
-PORT=5000
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_key
-GOOGLE_MAPS_API_KEY=your_key
-OCR_API_KEY=your_key
-JWT_SECRET=your_secret
-
-
-## Running the Application
-
-Start backend:
-
-cd server
-npm start
-
-
-Start mobile app:
-
-cd mobile
-npx expo start --dev-client
+![SnapiGo Project Poster](assets/Computing%20Poster-Pushpa_page-0001.jpg)
 
 
 ## Future Improvements
 
-- Smarter coupon matching using machine learning
-- Integration with retailer APIs for validation
-- Automatic coupon extraction from emails or receipts
-- Analytics for tracking savings and usage patterns
+- Publish the app on the iOS App Store and Google Play Store
+- Build a recommendation system for nearby or trending deals
+
+## Author
+
+Pushpa Pandey
